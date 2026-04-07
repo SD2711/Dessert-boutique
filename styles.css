@@ -78,8 +78,7 @@ input {
 }
 
 .utility-bar__inner,
-.site-header__inner,
-.footer-grid {
+.site-header__inner {
   display: flex;
   align-items: center;
 }
@@ -610,8 +609,7 @@ input {
 
 .product-card,
 .featured-card,
-.promo-card,
-.site-footer section {
+.promo-card {
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.78);
@@ -787,10 +785,22 @@ input {
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  align-items: stretch;
+  border-top: 1px solid rgba(96, 56, 65, 0.08);
+  background: rgba(255, 255, 255, 0.92);
 }
 
-.site-footer section {
-  padding: 28px;
+.footer-panel {
+  padding: 28px 24px;
+  min-height: 136px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-panel + .footer-panel {
+  border-left: 1px solid rgba(96, 56, 65, 0.14);
 }
 
 .site-footer h2 {
@@ -815,20 +825,37 @@ input {
   background: #fff;
 }
 
-.footer-link {
-  display: inline-block;
-  margin-top: 18px;
-  color: var(--rose-700);
-  font-weight: 700;
-}
-
 .social-list--footer {
-  margin-top: 18px;
+  margin-top: 8px;
 }
 
 .social-list--footer a {
   background: var(--rose-50);
   color: var(--rose-700);
+  width: 26px;
+  height: 26px;
+  font-size: 0.75rem;
+}
+
+.footer-link {
+  margin-top: 8px;
+  font-size: 0.82rem;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.footer-socials p {
+  font-size: 0.9rem;
+}
+
+.footer-order {
+  align-items: flex-start;
+}
+
+.footer-order .button {
+  min-width: 146px;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 @media (max-width: 1100px) {
@@ -853,6 +880,10 @@ input {
   .featured-grid,
   .footer-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-panel:nth-child(3) {
+    border-left: 0;
   }
 }
 
@@ -956,5 +987,15 @@ input {
   .footer-grid,
   .newsletter-form {
     grid-template-columns: 1fr;
+  }
+
+  .footer-panel + .footer-panel {
+    border-left: 0;
+    border-top: 1px solid rgba(96, 56, 65, 0.14);
+  }
+
+  .footer-order .button {
+    width: 100%;
+    min-width: 0;
   }
 }
