@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patiserie Boutique</title>
+  <title>Кондитерская Patiserie</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="utility-bar">
     <div class="container utility-bar__inner">
@@ -31,19 +33,21 @@
       </button>
 
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-        <a href="#top">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#cakes">Cakes</a>
-        <a href="#pastries">Pastries</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a class="site-nav__cta" href="#order">Order Now</a>
+        <a href="#top">Главная</a>
+        <a href="#menu">Меню</a>
+        <a href="#cakes">Торты</a>
+        <a href="#pastries">Десерты</a>
+        <a href="#about">О нас</a>
+        <a href="#contact">Контакты</a>
+        <a class="site-nav__cta" href="#order">Заказать</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
     <section class="hero">
+      <img class="hero__bg-image" src="assets/hero-cakes.png"
+        alt="Pink boutique cakes, macarons, and cupcakes arranged on cake stands">
       <div class="hero__backdrop" aria-hidden="true">
         <div class="hero__shadow hero__shadow--left"></div>
         <div class="hero__rose hero__rose--one"></div>
@@ -53,42 +57,16 @@
       </div>
 
       <div class="container hero__inner">
-        <div class="hero__display" aria-hidden="true">
-          <div class="dessert dessert--macarons dessert--macarons-left"></div>
-          <div class="dessert dessert--cake-main">
-            <div class="cake cake--main">
-              <span class="cake__top"></span>
-              <span class="cake__middle"></span>
-              <span class="cake__base"></span>
-              <span class="cake__stand"></span>
-            </div>
-          </div>
-          <div class="dessert dessert--cake-small">
-            <div class="cake cake--small">
-              <span class="cake__top"></span>
-              <span class="cake__middle"></span>
-              <span class="cake__base"></span>
-              <span class="cake__stand"></span>
-            </div>
-          </div>
-          <div class="dessert dessert--cupcakes">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="dessert dessert--macarons dessert--macarons-right"></div>
-        </div>
-
         <div class="hero__content">
-          <p class="eyebrow">Hand-finished celebration bakes</p>
-          <h1><span>Bite</span> into Happiness</h1>
+          <p class="eyebrow">Праздничные десерты ручной работы</p>
+          <h1><span>Вкус</span> счастья</h1>
           <p class="hero__copy">
-            Romantic layer cakes, delicate pastries, and gift-ready sweets made fresh for birthdays,
-            brunch tables, and every sweet excuse in between.
+            Нежные торты, изысканные пирожные и подарочные сладости, приготовленные свежими
+            для дней рождения, уютных встреч и особенных моментов.
           </p>
           <div class="hero__actions">
-            <a class="button button--primary" href="#cakes">Explore Cakes</a>
-            <a class="button button--secondary" href="#order">Fast Order</a>
+            <a class="button button--primary" href="#cakes">Смотреть торты</a>
+            <a class="button button--secondary" href="#order">Быстрый заказ</a>
           </div>
         </div>
       </div>
@@ -97,30 +75,34 @@
     <section class="catalog-section" id="cakes">
       <div class="container">
         <div class="section-heading">
-          <p class="section-heading__eyebrow">Signature menu</p>
-          <h2>Handcrafted Cakes</h2>
+          <p class="section-heading__eyebrow">Фирменное меню</p>
+          <h2>Торты ручной работы</h2>
         </div>
 
         <div class="product-grid">
           <article class="product-card">
-            <div class="product-card__image product-card__image--berry"></div>
-            <h3>Blush Berry Cloud</h3>
-            <p>Vanilla sponge, whipped cream, raspberry glaze</p>
+            <img class="product-card__image" src="assets/cakes/cake-1.png"
+              alt="White mousse cake with cream swirl and heart-shaped strawberry">
+            <h3>Ягодное облако</h3>
+            <p>Ванильный бисквит, взбитый крем и малиновая глазурь</p>
           </article>
           <article class="product-card">
-            <div class="product-card__image product-card__image--rose"></div>
-            <h3>Pink Petal Parfait</h3>
-            <p>Strawberry mousse, white chocolate, almond crumb</p>
+            <img class="product-card__image" src="assets/cakes/cake-2.png"
+              alt="Pink mousse cake topped with strawberry and berry crumble">
+            <h3>Розовый мусс</h3>
+            <p>Клубничный мусс, белый шоколад и миндальная крошка</p>
           </article>
           <article class="product-card">
-            <div class="product-card__image product-card__image--cream"></div>
-            <h3>Seasonal Vanilla</h3>
-            <p>Soft chiffon layers with fresh cream and citrus syrup</p>
+            <img class="product-card__image" src="assets/cakes/cake-3.png"
+              alt="Elegant layered cake with whipped cream topping">
+            <h3>Нежная ваниль</h3>
+            <p>Воздушные коржи со свежим кремом и цитрусовым сиропом</p>
           </article>
           <article class="product-card">
-            <div class="product-card__image product-card__image--celebration"></div>
-            <h3>Sunday Special</h3>
-            <p>Celebration sponge finished with berry confetti</p>
+            <img class="product-card__image" src="assets/cakes/cake-4.png"
+              alt="Layered berry cake with white cream and pink berry topping">
+            <h3>Ягодный праздник</h3>
+            <p>Праздничный бисквит с кремом и ягодным декором</p>
           </article>
         </div>
       </div>
@@ -129,35 +111,38 @@
     <section class="featured-section" id="menu">
       <div class="container">
         <div class="section-heading">
-          <p class="section-heading__eyebrow">Best sellers</p>
-          <h2>Featured Picks</h2>
+          <p class="section-heading__eyebrow">Хиты продаж</p>
+          <h2>Популярные десерты</h2>
         </div>
 
         <div class="featured-grid">
           <article class="featured-card">
-            <div class="featured-card__image featured-card__image--ribbon"></div>
-            <h3>Rosette Party Cake</h3>
-            <p>Six-inch strawberry sponge with whipped vanilla cream.</p>
-            <strong>$18.50</strong>
+            <img class="featured-card__image" src="assets/featured/featured-1.png"
+              alt="Pink raspberry mousse cake decorated with raspberries and cream dots">
+            <h3>Малиновый муссовый торт</h3>
+            <p>Нежный ягодный торт с воздушным кремом и малиной.</p>
+            <strong>1500 руб.</strong>
           </article>
           <article class="featured-card" id="pastries">
-            <div class="featured-card__image featured-card__image--petit"></div>
-            <h3>Petite Tea Box</h3>
-            <p>Macarons, cream puffs, and berry bites for afternoon hosting.</p>
-            <strong>$13.20</strong>
+            <img class="featured-card__image" src="assets/featured/featured-2.png"
+              alt="Assorted truffles with raspberry crumble in a white bowl">
+            <h3>Ассорти трюфелей</h3>
+            <p>Набор нежных трюфелей для чаепития и сладких подарков.</p>
+            <strong>1800 руб.</strong>
           </article>
           <article class="featured-card">
-            <div class="featured-card__image featured-card__image--slice"></div>
-            <h3>Honey Cream Slice</h3>
-            <p>Layered sponge slice with mascarpone filling and soft fruit finish.</p>
-            <strong>$16.90</strong>
+            <img class="featured-card__image" src="assets/featured/featured-3.png"
+              alt="Cream cake slice topped with pink cream, berries, and fruit garnish">
+            <h3>Кремовое пирожное</h3>
+            <p>Слоёное пирожное с маскарпоне, ягодами и нежной начинкой.</p>
+            <strong>2300 руб.</strong>
           </article>
           <aside class="promo-card" id="order">
-            <p class="promo-card__eyebrow">Weekend offer</p>
-            <h3>Valentine's Collection Desserts</h3>
-            <p>Pre-book custom gift boxes and save <strong>15% off</strong>.</p>
-            <a class="button button--light" href="#contact">Order Now</a>
-            <small>Pickup and local delivery available</small>
+            <p class="promo-card__eyebrow">Предложение недели</p>
+            <h3>Коллекция десертов ко Дню влюблённых</h3>
+            <p>Оформите предзаказ на подарочные наборы и получите <strong>скидку 15%</strong>.</p>
+            <a class="button button--light" href="#contact">Заказать</a>
+            <small>Доступен самовывоз и локальная доставка</small>
           </aside>
         </div>
       </div>
@@ -167,7 +152,7 @@
   <footer class="site-footer" id="about">
     <div class="container footer-grid">
       <section class="footer-panel">
-        <h2>Newsletters</h2>
+        <h2>Новости</h2>
         <ul class="social-list social-list--footer" aria-label="Newsletter links">
           <li><a href="#" aria-label="Facebook">f</a></li>
           <li><a href="#" aria-label="Twitter">t</a></li>
@@ -177,24 +162,25 @@
       </section>
 
       <section class="footer-panel">
-        <h2>Ciiemeral</h2>
-        <p>Romantic handcrafted cakes</p>
+        <h2>О нас</h2>
+        <p>Романтичные десерты ручной работы</p>
         <a class="footer-link" href="#cakes">patiserieboutique.com</a>
       </section>
 
       <section class="footer-panel footer-socials">
-        <h2>Socials</h2>
+        <h2>Соцсети</h2>
         <p>f 584.299</p>
         <p>i 5883 606</p>
       </section>
 
       <section class="footer-panel footer-order" id="contact">
-        <h2>Fast Order</h2>
-        <a class="button button--primary button--block" href="#order">Eet Now</a>
+        <h2>Быстрый заказ</h2>
+        <a class="button button--primary button--block" href="#order">Заказать</a>
       </section>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
